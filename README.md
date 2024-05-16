@@ -1,4 +1,5 @@
-# GitHub Workflow Exercise Instructions
+# GitHub 
+## Workflow Exercise Instructions
 
 1. **Create a New Repository**:
    On GitHub, create a new repository called `git-workflow-exercise`.
