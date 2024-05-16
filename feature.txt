@@ -40,4 +40,55 @@ To github.com:julioaranajr/git-workflow-exercise.git
 ╰─± git checkout feature-1 
 Switched to branch 'feature-1'
 ╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on feature-1✔ 
-╰─± 
+╰─± git status
+On branch feature-1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        feature.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on feature-1✘✘✘ 
+╰─± git add .
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on feature-1✘✘✘ 
+╰─± git status
+On branch feature-1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   feature.txt
+
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on feature-1✘✘✘ 
+╰─± git commit -m "adding feature.txt file"
+[feature-1 3e4b5a4] adding feature.txt file
+ 1 file changed, 43 insertions(+)
+ create mode 100644 feature.txt
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on feature-1✔ 
+╰─± git log --pretty=oneline --graph
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on feature-1✔ 
+╰─± git checkout main
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on main✔ 
+╰─± git merge feature-1 main
+Updating 70d3245..3e4b5a4
+Fast-forward
+ feature.txt | 43 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 43 insertions(+)
+ create mode 100644 feature.txt
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on main✔ 
+╰─± git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+╭─dci-student at lenovo-julioarana in ~/3_GitHub/git-workflow-exercise on main✔ 
+╰─± git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   feature.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
